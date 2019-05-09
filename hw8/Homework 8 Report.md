@@ -6,7 +6,7 @@
 
 #### Problem 1: Given the following landmark models, please use importance sampling and resampling techniques to estimate the robot location.
 
-![p1f1](/home/hya/Documents/Robot/hw8/p1f1.png)
+![p1f1](src/p1f1.png)
 
 For every landmark, we can give some noise to the distance between robot and landmark, then we can get some initial samples. 
 
@@ -19,11 +19,11 @@ For every landmark, we can give some noise to the distance between robot and lan
 
 It show below.
 
-![p1f2](/home/hya/Documents/Robot/hw8/p1f2.png)
+![p1f2](src/p1f2.png)
 
 Then we use the algorithm to do importance sampling. The weight was calculate by this algorithm. For problem 1, the orientation part was ignored and Z_fp was zero.
 
-![weight](/home/hya/Documents/Robot/hw8/weight.png)
+![weight](src/weight.png)
 
 After get weight, use this code to resampling
 
@@ -54,19 +54,19 @@ end
 
 The result is in `res`, the figure was shown below:
 
-![p1f3](/home/hya/Documents/Robot/hw8/p1f3.png)
+![p1f3](src/p1f3.png)
 
 #### Problem 2: Given the following Landmark models, please use importance sampling and resampling techniques to estimate the robot position and orientation.
 
 THis problem has 6 landmark, use similar method to give noise to the distance and orientation between robot and landmark. 
 
-![p2f1](/home/hya/Documents/Robot/hw8/p2f1.png)
+![p2f1](src/p2f1.png)
 
 Calculate the weight of each sample, the weight for each landmark should be multiplied. 
 
 And then, do the resampling. The result was show below. 
 
-![p2f2](/home/hya/Documents/Robot/hw8/p2f2.png)
+![p2f2](src/p2f2.png)
 
 
 
@@ -74,22 +74,23 @@ And then, do the resampling. The result was show below.
 
 Open gazebo and run the matlab script:
 
-![p3f2](/home/hya/Documents/Robot/hw8/p3f2.png)
+![p3f2](src/p3f2.png)
 
 
 
-![p3](/home/hya/Documents/Robot/hw8/p3.png)
+![p3](src/p3.png)
 
 The result was show below.
 
 The initial sample:
 
-![p3f3](/home/hya/Documents/Robot/hw8/p3f3.png)
+![p3f3](src/p3f3.png)
 
 After 9 update:
 
-![p3f4](/home/hya/Documents/Robot/hw8/p3f4.png)
+![p3f4](src/p3f4.png)
 
 After 55 update, robot can find its position.
 
-![p3f5](/home/hya/Documents/Robot/hw8/p3f5.png)
+![p3f5](src/p3f5.png)
+
